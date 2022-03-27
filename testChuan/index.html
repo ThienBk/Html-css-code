@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee Việt Nam | Mua và bán trên ứng dụng điện thoại và website</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"> 
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/icon.jpg"/>        
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-free-5.15.1-web/css/all.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--separate">Kênh người bán</li>
+                        <li class="header__navbar-item header__navbar-item--separate">Trở thành Người bán Shopee</li>
+                        <li class="header__navbar-item header__navbar-item--separate">Tải ứng dụng
+                            <div class="header__qr">
+                                <img src="img/qrcode.png" alt="QR code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="img/ggplay.png" alt="" class="header__qr-dowload-img">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="img/appstore.png" alt="" class="header__qr-dowload-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-title--no-pointer">Kết nối</span>
+                            <a class="header__navbar-item-link" href="">
+                                <i class="header__navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a class="header__navbar-item-link" href="">
+                                <i class="header__navbar-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                              <i class="header__navbar-icon far fa-bell"></i>
+                              Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link ">
+                                            <img src="" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name"><img src="img/notify1.png" alt=""><p>Chỉ 10k mua được 5 Voucher</p></span>
+                                                <span class="header__notify-name"><img src="img/notify2.png" alt=""><p>Thêm 2 mã freeship cho bạn</p></span>
+                                                <span class="header__notify-name"><img src="img/notify3.png" alt=""><p>21H: Deal 1k mở phiên đợt cuối</p></span>
+                                                <span class="header__notify-name"><img src="img/notify4.png" alt=""><p>Sale 15.6: Voucher đến 150k lúc 12h</p></span>
+                                                <span class="header__notify-name"><img src="img/notify4.png" alt=""><p>Chớp ngay mã FreeShip 0 đồng</p></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-footer">
+                                        <a href="">Xem tất cả</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                              <i class="header__navbar-icon far fa-question-circle"></i>
+                              Trợ giúp
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate js-register">Đăng kí</li>
+                        <li class="header__navbar-item header__navbar-item--strong js-login">Đăng nhập</li>
+                    </ul>
+                </nav>
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <a href=""><i class="fab fa-shopify"></i><h1>Shopee</h1></a>
+                    </div>
+                    <div class="header__search">
+                        <input type="text" class="header__search-input" placeholder="Tìm trong shop này">
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">Trong Shop</span>
+                            <i class="header__search-select-icon fas fa-chevron-down"></i>
+                        </div>
+                        <button class="search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="header__cart">
+                        <i class="fas fa-cart-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="header__footer">
+                    <ul class="header__footer-select">
+                        <a class="header__footer-link" href=""><li class="header__footer-option">Váy</li></a>
+                        <a class="header__footer-link" href=""><li class="header__footer-option">Áo Phông</li></a>
+                        <a class="header__footer-link" href=""><li class="header__footer-option">Chân Váy</li></a>
+                        <a class="header__footer-link" href=""><li class="header__footer-option">Áo Croptop</li></a>
+                        <a class="header__footer-link" href=""><li class="header__footer-option">Son</li></a>
+                        <a class="header__footer-link" href=""><li class="header__footer-option">Quần</li></a>
+                        <a class="header__footer-link" href=""><li class="header__footer-option">Bông Tẩy Trang</li></a>
+                        <a class="header__footer-link" href=""><li class="header__footer-option">Dép Nữ</li></a>
+                    </ul>
+                </div>
+            </div>
+        </header>  
+
+        <div class="full-home-banner-wrapper">
+            <div class="banner-img">
+                <div class="slidershow">
+                    <div class="slides">
+                        <input type="radio" name="bottom" id="bottom_1" checked>
+                        <input type="radio" name="bottom" id="bottom_2">
+                        <input type="radio" name="bottom" id="bottom_3">
+                        <input type="radio" name="bottom" id="bottom_4">
+                        <input type="radio" name="bottom" id="bottom_5">
+                        <div class="slide s1">
+                            <img src="img/1.jpg">
+                        </div>
+                        <div class="slide">
+                            <img src="img/2.jpg">
+                        </div>
+                        <div class="slide">
+                            <img src="img/3.jpg">
+                        </div>
+                        <div class="slide">
+                            <img src="img/4.jpg">
+                        </div>
+                        <div class="slide">
+                            <img src="img/5.jpg">
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <label for="bottom_1" class="bar"></label>
+                        <label for="bottom_2" class="bar"></label>
+                        <label for="bottom_3" class="bar"></label>
+                        <label for="bottom_4" class="bar"></label>
+                        <label for="bottom_5" class="bar"></label>
+                    </div>
+                </div>
+                <div class="banner-img-right">
+                        <div class="banner-right">
+                            <img src="img/right1.jpg" alt="" class="banner-right-1">
+                            <img src="img/right2.jpg" alt="" class="banner-right-2">
+                        </div>
+                </div>  
+            </div>
+            <div class="banner-bottom">
+                <div class="banner__bottom-item cate-1">
+                    <a href="">
+                        <img class="banner-bottom-img"src="img/cate1.png" alt="">
+                        <p>Tech Zone - Siêu Thị Điện Tử</p>
+                    </a>
+                </div>
+                <div class="banner__bottom-item cate-2">
+                    <a href="">
+                        <img class="banner-bottom-img" src="img/cate2.png" alt="">
+                        <p>Gì Cũng Rẻ - Từ 1K</p>
+                    </a>
+                </div>
+                <div class="banner__bottom-item cate-3">
+                    <a href="">
+                        <img class="banner-bottom-img" src="img/cate3.png" alt="">
+                        <p>Hoàn Xu 15% Mỗi Ngày</p>
+                    </a>
+                </div>
+                <div class="banner__bottom-item cate-4">
+                    <a href="">
+                        <img class="banner-bottom-img" src="img/cate4.png" alt="">
+                        <p>Nạp Thẻ, Dịch Vụ & Phim</p>
+                    </a>
+                </div>
+                <div class="banner__bottom-item cate-5">
+                    <a href="">
+                        <img class="banner-bottom-img" src="img/cate5.png" alt="">
+                        <p>Shopee Số Gì Đây</p>
+                    </a>
+                </div>
+                <div class="banner__bottom-item cate-6">
+                    <a href="">
+                        <img class="banner-bottom-img" src="img/cate6.png" alt="">
+                        <p>Freeship Xtra</p>
+                    </a>
+                </div>
+                <div class="banner__bottom-item cate-7">
+                    <a href="">
+                        <img class="banner-bottom-img" src="img/cate7.png" alt="">
+                        <p>Hàng Hiệu -50%</p>
+                    </a>
+                </div>
+                <div class="banner__bottom-item cate-8">
+                    <a href="">
+                        <img class="banner-bottom-img" src="img/cate8.png" alt="">
+                        <p>Shopee Premium</p>
+                    </a>
+                </div>
+                <div class="banner__bottom-item cate-9">
+                    <a href="">
+                        <img class="banner-bottom-img" src="img/cate9.png" alt="">
+                        <p>Shopee Premium</p>
+                    </a>
+                </div>
+                <div class="banner__bottom-item cate-10">
+                    <a href="">
+                        <img class="banner-bottom-img" src="img/cate10.png" alt="">
+                        <p>Ở Nhà Không Khó</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="banner-welcome-packet">
+                <img src="img/welcomebanner.png" alt="" class="banner-welcome-img">
+            </div>
+            <div class="rols">
+                <img src="img/rols.jpg" alt="" class="rols-img">
+                <div class="rols-bottom">
+                    <p class="rols-p">Sản phẩm bán chạy</p>
+                    <a class="rols-link" href="">Xem thêm > </a>
+                </div>
+            </div>
+            <div class="P1">
+                <div class="selling-product product-1">
+                    <img src="img/selling-product-1.jpg" alt="">
+                    <p>₫3.900</p>
+                </div>
+                <div class="selling-product product-2">
+                    <img src="img/selling-product-2.jpg" alt="">
+                    <p>₫59.000</p>
+                </div>
+                <div class="selling-product product-3">
+                    <img src="img/selling-product-3.jpg" alt="">
+                    <p>₫30.000</p>
+                </div>
+                <div class="selling-product product-4">
+                    <img src="img/selling-product-4.jpg" alt="">
+                    <p>₫3.850</p>
+                </div>
+                <div class="selling-product product-5">
+                    <img src="img/selling-product-5.jpg" alt="">
+                    <p>₫239.900</p>
+                </div>
+                <div class="selling-product product-6">
+                    <img src="img/selling-product-6.jpg" alt="">
+                    <p>₫122.000</p>
+                </div>
+                <div class="rols-bottom-end">
+                    
+                </div>
+            </div>
+            <div class="P2">
+                <p>DANH MỤC</p>
+                <div class="P2_grid-container">
+                    <div class="P2_grid-item">
+                        <a href="">
+                            <img src="img/P2-item1.png" alt= "">
+                            <p>Thời Trang Nam</p>
+                        </a>
+                    </div>
+                    <div class="P2_grid-item">
+                        <a href="">
+                            <img src="img/P2-item2.png" alt= "">
+                            <p>Điện Thoại & Phụ Kiện</p>
+                        </a>
+                    </div>
+                    <div class="P2_grid-item">
+                        <a href="">
+                            <img src="img/P2-item3.png" alt= "">
+                            <p>Thiết Bị Điện Tử</p>
+                        </a>
+                    </div>
+                    <div class="P2_grid-item">
+                        <a href="">
+                            <img src="img/P2-item4.png" alt= "">
+                            <p>Máy Tính & Laptop</p>
+                        </a>
+                    </div>
+                    <div class="P2_grid-item">
+                        <a href="">
+                            <img src="img/P2-item5.png" alt= "">
+                            <p>Máy Ảnh & Máy Quay Phim</p>
+                        </a>
+                    </div>
+                    <div class="P2_grid-item">
+                        <a href="">
+                            <img src="img/P2-item6.png" alt= "">
+                            <p>Đồng Hồ</p>
+                        </a>
+                    </div>
+                    <div class="P2_grid-item">
+                        <a href="">
+                            <img src="img/P2-item7.png" alt= "">
+                            <p>Giày Dép Nam</p>
+                        </a>
+                    </div>
+                    <div class="P2_grid-item">
+                        <a href="">
+                            <img src="img/P2-item8.png" alt= "">
+                            <p>Thiết Bị Điện Gia Dụng</p>
+                        </a>
+                    </div>
+                    <div class="P2_grid-item">
+                        <a href="">
+                            <img src="img/P2-item9.png" alt= "">
+                            <p>Thể Thao & Du Lịch</p>
+                        </a>
+                    </div>
+                    <div class="P2_grid-item">
+                        <a href="">
+                            <img src="img/P2-item10.png" alt= "">
+                            <p>Ô Tô & Xe Máy & Xe Đạp</p>
+                        </a>
+                    </div>
+                    <div class="P2_grid-item">
+                        <a href="">
+                            <img src="img/P2-item11.png" alt= "">
+                            <p>Thời Trang Nữ</p>
+                        </a>
+                    </div>
+                    <div class="P2_grid-item">
+                        <a href="">
+                            <img src="img/P2-item12.png" alt= "">
+                            <p>Mẹ & Bé</p>
+                        </a>
+                    </div>
+                    <div class="P2_grid-item">
+                        <a href="">
+                            <img src="img/P2-item13.png" alt= "">
+                            <p>Nhà Cửa & Đời Sống</p>
+                        </a>
+                    </div>
+                    <div class="P2_grid-item">
+                        <a href="">
+                            <img src="img/P2-item14.png" alt= "">
+                            <p>Sắc Đẹp</p>
+                        </a>
+                    </div>
+                    <div class="P2_grid-item">
+                        <a href="">
+                            <img src="img/P2-item15.png" alt= "">
+                            <p>Sức Khỏe</p>
+                        </a>
+                    </div>
+                    <div class="P2_grid-item">
+                        <a href="">
+                            <img src="img/P2-item16.png" alt= "">
+                            <p>Giày Dép Nữ</p>
+                        </a>
+                    </div>
+                    <div class="P2_grid-item">
+                        <a href="">
+                            <img src="img/P2-item17.png" alt= "">
+                            <p>Túi Ví Nữ</p>
+                        </a>
+                    </div>
+                    <div class="P2_grid-item">
+                        <a href="">
+                            <img src="img/P2-item18.png" alt= "">
+                            <p>Phụ Kiện & Trang Sức Nữ</p>
+                        </a>
+                    </div>
+                    <div class="P2_grid-item">
+                        <a href="">
+                            <img src="img/P2-item19.png" alt= "">
+                            <p>Bách Hóa Online</p>
+                        </a>
+                    </div>
+                    <div class="P2_grid-item">
+                        <a href="">
+                            <img src="img/P2-item20.png" alt= "">
+                            <p>Nhà Sách Online</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs-header">
+                <a href="">GỢI Ý HÔM NAY</a>
+                <a href="">
+                    <img src="img/tabs-header-img.png" alt="">
+                </a>
+            </div>
+            <div class="tab-grid-container">
+                <div class="tab-item">
+                    <img src="img/tabs-item-1.jpg" alt="">
+                    <p class="description">[🔔 XẢ KHO] Giày 𝐍𝐢𝐤𝐞 trắng, 𝐍𝐢𝐤𝐞 AF1 Màu Trắng Bản Đẹp Tiêu Chuẩn Hot Hit 2021</p>
+                    <span>
+                        <p class="price">đ39.434</p>
+                        <p class="sellded">Đã bán 635</p>
+                    </span>
+                </div>
+                <div class="tab-item">
+                    <img src="img/tabs-item-2.jpg" alt="">
+                    <p class="description">[Sale Sốc]Quần Dài Thể Thao Ống Rộng Nữ 🌸 Culottes Suông 1 Sọc, 2 Sọc, 3 Sọc Ulzzang Hot🌸</p>
+                    <span>
+                        <p class="price">đ7.900</p>
+                        <p class="sellded">Đã bán 600</p>
+                    </span>
+                </div>
+                <div class="tab-item">
+                    <img src="img/tabs-item-3.jpg" alt="">
+                    <p class="description">[ TẶNG GIÀY Jordan 7 ] Mua hộp TẶNG Giày thời trang bóng rổ cao cổ Nam siêu hót</p>
+                    <span>
+                        <p class="price">đ742.000</p>
+                        <p class="sellded">Đã bán 500</p>
+                    </span>
+                </div>
+                <div class="tab-item">
+                    <img src="img/tabs-item-4.jpg" alt="">
+                    <p class="description">Pijama nữ cao cấp-Đồ bộ</p>
+                    <span>
+                        <p class="price">đ140.000</p>
+                        <p class="sellded">Đã bán 600</p>
+                    </span>
+                </div>
+                <div class="tab-item">
+                    <img src="img/tabs-item-5.jpg" alt="">
+                    <p class="description">Áo thun tay lỡ nam nữ Vans Unisex oversize form rộng áo phông rộng mùa hè</p>
+                    <span>
+                        <p class="price">đ10.000</p>
+                        <p class="sellded">Đã bán 500</p>
+                    </span>
+                </div>
+                <div class="tab-item">
+                    <img src="img/tabs-item-6.jpg" alt="">
+                    <p class="description">Quần Caro Baggy Nam Nữ Ống Rộng Unisex Plaid pants SIB005 - SIB CLothing</p>
+                    <span>
+                        <p class="price">đ109.000</p>
+                        <p class="sellded">Đã bán 400</p>
+                    </span>
+                </div>
+                <div class="tab-item">
+                    <img src="img/tabs-item-7.jpg" alt="">
+                    <p class="description">Combo tart trứng(bao gồm 30 đế bánh tart+kem trứng)ship hỏa tốc grap,now</p>
+                    <span>
+                        <p class="price">đ68.000</p>
+                        <p class="sellded">Đã bán 350</p>
+                    </span>
+                </div>
+                <div class="tab-item">
+                    <img src="img/tabs-item-8.jpg" alt="">
+                    <p class="description">Áo thun tay lỡ form rộng có up hình thật ở cuối</p>
+                    <span>
+                        <p class="price">đ13.000</p>
+                        <p class="sellded">Đã bán 700</p>
+                    </span>
+                </div>
+                <div class="tab-item">
+                    <img src="img/tabs-item-9.jpg" alt="">
+                    <p class="description">Hiển Thị Cái Mũ Cô Dâu Hiển Thị Trang Phục Cưới Đám Cưới Trung Quốc Bầu Không Khí Tua Phoenix Bước Vương Miện Phụ Kiện Tóc Nữ</p>
+                    <span>
+                        <p class="price">đ495.752</p>
+                        <p class="sellded">Đã bán 200</p>
+                    </span>
+                </div>
+                <div class="tab-item">
+                    <img src="img/tabs-item-10.jpg" alt="">
+                    <p class="description">bộ tt chạy vạch</p>
+                    <span>
+                        <p class="price">đ30.000</p>
+                        <p class="sellded">Đã bán 650</p>
+                    </span>
+                </div>
+                <div class="tab-item">
+                    <img src="img/tabs-item-11.jpg" alt="">
+                    <p class="description">ĐẸP NÕN NÀ - DA SÁNG MỊN RẠNG RỠ Combo 3 Chai 82X: COLLAGEN + SAKURA COLLAGEN + SAKURA PLACENTA Nước Uống Đẹp Da Từ Nhật</p>
+                    <span>
+                        <p class="price">đ7000.000</p>
+                        <p class="sellded">Đã bán 1</p>
+                    </span>
+                </div>
+                <div class="tab-item">
+                    <img src="img/tabs-item-12.jpg" alt="">
+                    <p class="description">Hải Anh Uniform Áo Lớp Funny Sunny</p>
+                    <span>
+                        <p class="price">đ250.000</p>
+                        <p class="sellded">Đã bán 1200</p>
+                    </span>
+                </div>
+            </div>
+        </div>  
+        <footer class="footer">
+            <div class="Introduce">
+                <h1>SHOPEE - GÌ CŨNG CÓ, MUA HẾT Ở SHOPEE</h1>
+                <p>Shopee - ứng dụng mua sắm trực tuyến thú vị, tin cậy, an toàn và miễn phí! Shopee là nền tảng giao dịch trực tuyến hàng đầu ở Đông Nam Á, Việt Nam, Singapore, Malaysia, Indonesia, Thái Lan, Philipin, Đài loan và Brazil. Với sự đảm bảo của Shopee, bạn sẽ mua hàng trực tuyến an tâm và nhanh chóng hơn bao giờ hết!</p>
+                <h1>MUA SẮM VÀ BÁN HÀNG ONLINE ĐƠN GIẢN, NHANH CHÓNG VÀ AN TOÀN</h1>
+                <p>Nếu bạn đang tìm kiếm một trang web để mua và bán hàng trực tuyến thì Shopee.vn là một sự lựa chọn tuyệt vời dành cho bạn. Bản chất của Shopee là một social E-commerce platform - nền tảng trang web thương mại điện tử tích hợp mạng xã hội. Điều này cho phép người mua và người bán hàng dễ dàng tương tác, trao đổi thông tin về sản phẩm và chương trình khuyến mãi của shop. Nhờ nền tảng đó, việc mua bán trên Shopee trở nên nhanh chóng và đơn giản hơn. Bạn có thể trò chuyện trực tiếp với nhà bán hàng để hỏi trực tiếp về mặt hàng cần mua. Còn nếu bạn muốn tìm mua những dòng sản phẩm chính hãng, uy tín, Shopee Mall chính là sự lựa chọn lí tưởng dành cho bạn. Đến với Shopee, cơ hội để trở thành một nhà bán hàng dễ dàng hơn bao giờ hết. Chỉ với vài thao tác trên ứng dụng, bạn đã có thể đăng bán ngay những sản phẩm của mình. Không những thế, các nhà bán hàng có thể tùy chọn các
+                    <a href="">tính năng “Shop tạm nghỉ”</a> hoặc tự <a href="">tạo chương trình khuyến mãi trên Shopee</a> ể thu hút người mua với những sản phẩm có mức giá hấp dẫn. Khi đăng nhập tại Shopee Kênh người bán, bạn có thể dễ dàng 
+                    <a href=""> phân loại sản phẩm</a>, theo dõi đơn hàng, chăm sóc khách hàng và cập nhập ngay các hoạt động của shop.
+                </p>
+            </div>
+        </footer>
+        
+        <!-- Modal layout -->
+        <div class="modal">
+            <div class="modal__overlay"></div>
+
+            <div class="modal__body">
+                <div class="modal__inner">
+                    <!-- Register -->
+                    <div class = "auth-form">
+                        <div class="auth-form__container">  
+                            <div class="auth-form__header">
+                                <h3 class="auth-form__heading">Đăng ký</h3>
+                                <span class="auth-form__switch-btn">Đăng nhập</span>
+                            </div>
+                            <div class="auth-form__form">
+                                <div class="auth-form__group">
+                                    <input type="text" class="auth-form__input" placeholder="Nhập email">
+                                </div>
+                                <div class="auth-form__group">
+                                    <input type="text" class="auth-form__input" placeholder="Nhập Mật khẩu của bạn">
+                                <div class="auth-form__group">
+                                    <input type="text" class="auth-form__input" placeholder="Nhập lại Mật khẩu">
+                                </div>
+                            </div>
+                            <div class="auth-form__form__aside">
+                                <p class="auth-form__policy-text">
+                                    Bằng việc đăng ký, bạn đã đồng ý với shopee về
+                                    <a class="auth-form__text-link" href="">Điều khoản dịch vụ </a>&
+                                    <a class="auth-form__text-link" href="">chính sách bảo mật</a>
+                                </p>
+                            </div>
+                            <div class="auth-form__controls">
+                                <button class="btn auth-form__controls-back">TRỞ LẠI</button>
+                                <button class="btn btn--primary">ĐĂNG KÝ</button>
+                            </div>
+                        </div>
+                        <div class="auth-form__socials">    
+                            <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                                <i class="auth-form__socials-icon fab fa-facebook"></i>
+                                Kết nối với facebook
+                            </a>    
+                            <a href="" class="auth-form__socials--google auth-form__socials-icon btn btn--size-s btn--with-icon">
+                                <i class="auth-form__socials-icon fab fa-google"></i>
+                                Kết nối với google
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Login form -->
+                    <!-- <div onclick = "Show()" class="auth-form js-login-form">
+                        <div class="auth-form__container">
+                            <div class="auth-form__header">
+                                <h3 class="auth-form__heading">Đăng nhập</h3>
+                                <span class="auth-form__switch-btn">Đăng ký</span>
+                            </div>
+                            <div class="auth-form__form">
+                                <div class="auth-form__group">
+                                    <input type="text" class="auth-form__input" placeholder="Nhập email">
+                                </div>
+                                <div class="auth-form__group">
+                                    <input type="text" class="auth-form__input" placeholder="Nhập Mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__form__aside">
+                                <div class="auth-form__form__help">
+                                    <a href="" class="auth-form__form__help-link auth-form__form__help-forgot">Quên mật khẩu</a>
+                                    <span class="auth-form__form__help-separate">
+
+                                    </span>
+                                    <a href="" class="auth-form__form__help-link">Cần trợ giúp?</a>
+                                </div>
+                            </div>
+                            <div class="auth-form__controls">
+                                <button class="btn auth-form__controls-back">TRỞ LẠI</button>
+                                <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                            </div>
+                        </div>
+                        <div class="auth-form__socials">    
+                            <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                                <i class="auth-form__socials-icon fab fa-facebook"></i>
+                                Đăng nhập với facebook
+                            </a>    
+                            <a href="" class="auth-form__socials--google auth-form__socials-icon btn btn--size-s btn--with-icon">
+                                <i class="auth-form__socials-icon fab fa-google"></i>
+                                Đăng nhập với google
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const register = document.querySelector('.js-register')
+        const showModal = document.querySelector('.modal')
+        const getmodal__body = showModal.querySelector('.modal__body')
+        const getmodal__inner = getmodal__body.querySelector('.modal__inner')
+        const get_js_register_form = getmodal__inner.querySelector('.auth-form')
+        function showRegis(){
+            get_js_register_form.classList.add('open')
+            // alert("Hello")
+        }
+
+        register.addEventListener('click', showRegis)
+        // const register = document.querySelector('.js-register') // the li
+        // const login = document.querySelector('.js-login')       // the li
+        // const showRegister = document.querySelector('.js-register-form')
+        // const showLogin = document.querySelector('.js-login-form')
+        // const showModal = document.querySelector('.modal')
+
+        // function showRegis(){
+        //     showModal.classList.add('open')
+        // }
+        // function showLg(){
+        //     alert("hi")
+        // }
+        
+
+        // register.addEventListener('click', showRegis)
+        // login.addEventListener('click', showLg)
+        // showModal.addEventListener('click', showLg, showRegis)
+    </script>
+</body>
+</html>

@@ -1,0 +1,481 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 1.vị trí
+    2. kích thước
+    3.màu sắc
+    4.kiểu chữ
+*/
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+
+}
+#header{
+    height: 46px;
+    background-color: #000;
+    position: fixed;    
+    width: 100%;
+    top:0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0 0 30px rgba(255,255,255,1);
+}
+#nav{
+    
+}
+#nav, .subnav{
+    list-style-type: none;
+}
+#nav > li{
+    display: inline-block;
+
+}
+#nav li{
+    position: relative; 
+}
+#nav .subnav{
+    min-width: 160px;
+    display: none;
+    position: absolute;
+    top : 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5) ;
+}
+
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    color: #000;
+    background-color: #ccc;
+}
+#nav .subnav a{
+    color: #000;
+    padding: 0 10px;
+    line-height: 38px;
+}
+/* icon css */
+.nav-sort-down{
+}
+.nav-search{
+    text-align: center;
+    width: 70px;
+    float: right;
+    line-height: 46px;
+    margin-right: 30px;
+}
+.nav-search:hover{
+    background-color:rgb(233, 35, 35);
+}
+#slide{
+    background: url('img/chicago.jpg') top center / cover no-repeat;
+    margin-top:46px;
+    padding-top: 50%;
+    position: relative; 
+    width: 100%;
+}
+/*Css Text trong ảnh */
+.text-slider{
+    color: #fff;
+    position: absolute;
+    bottom: 47px;
+    left:50%;
+    transform: translateX(-50%);
+    text-shadow: 0 0 20px rgba(0,0,0,5);
+}
+.text-slider .silder-text1{
+    padding-left: 100px;
+}
+.text-slider .silder-text2{}
+
+/*  Css Content */
+#content{
+}
+#content .content-section{  
+    width: 100%;
+    max-width: 100%;
+    padding: 64px 0;
+    margin-left: 15px;
+}
+#content .content-section .section-heading{
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+#content .content-section .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    opacity: 0.5;
+    margin-top: 25px;
+    font-style: italic;
+}
+#content .content-section .about-text{
+    margin-top: 30px;
+    text-align: justify;
+    line-height: 1.4;
+}
+/* member css */
+.members-list{
+    display: flex;
+    justify-content: space-around;
+}
+.members-list .members-item{
+    float: left;
+    display: flex;
+    flex-direction:column;
+}
+.members-list .members-item img{     
+    margin: 0 16px;
+    max-width:153.58px;
+    max-height:153.58px;
+}
+.members-list .members-item .members-name{
+    text-align: center;
+    margin: 45px 0 15px 0;
+}
+/* content css */
+.tour-section{
+    height: 842px;
+    background-color: #000;
+    text-align: center;
+}
+.tour-section .tour-heading{
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 30px;
+    padding: 80px 0 20px 0;
+}
+.tour-sub-heading{
+    color: #fff;
+    opacity: 0.5;
+    font-style: italic;
+    padding-bottom: 30px;
+}
+.tour-content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+.tour-ul{
+    background-color: #fff;
+    text-align: left;
+}
+.tour-ul li{
+    width: 768px;
+    padding: 8px 16px;
+    list-style-type: none;
+    min-height: 40px; 
+    line-height: 40px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+.tour-span{
+    background-color: red;
+    color: #fff;
+    padding: 2px 2px;
+}
+.tour-span3{
+    width: 24px;
+    height: 24px;
+    float: right;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: 8px;
+}
+/* Place css */
+.palce{
+    height: 420px;
+    width: 100%;
+    padding: 32px 0;
+    display: flex;
+    justify-content: center;
+}
+.newyork{
+    background-color: #fff;
+    margin: 0 16px;   
+}
+.newyork-content{
+    width: 245px;
+}
+.newyork-content > p,
+.newyork-content > h5,
+.newyork-content > b{
+    text-align: left;
+    padding-left: 10px;
+    margin: 15px 0;
+}
+.newyork-content > button{
+    text-decoration: none;
+    margin-bottom: 16px;
+    background-color: #000;
+    color: #fff;
+    padding: 11px 11px;
+    float: left;
+    margin-left: 12px;
+
+}
+/* paris */
+.paris{
+    background-color: #fff;
+    margin: 0 16px;   
+}
+.paris-content{
+    width: 245px;
+}
+.paris-content > button{
+    text-decoration: none;
+    margin-bottom: 16px;
+    background-color: #000;
+    color: #fff;
+    padding: 11px 11px;
+    float: left;
+    margin-left: 12px;
+}
+.paris-content > p,
+.paris-content > h5,
+.paris-content > b{
+    text-align: left;
+    padding-left: 10px;
+    margin: 15px 0;
+}
+.sanfan{
+    margin: 0 16px;
+    background-color: #fff;
+    width: 200px;
+
+}
+.sanfan > img{
+  width: 200px;
+
+}
+.sanfan-content{
+    width: 245px;
+}
+.sanfan-content > p,
+.sanfan-content > h5,
+.sanfan-content > b{
+    text-align: left;
+    padding-left: 10px;
+    margin: 15px 0;
+}
+.sanfan-content > button{
+    text-decoration: none;
+    margin-bottom: 16px;
+    background-color: #000;
+    color: #fff;
+    float: left;
+    padding: 11px 11px;
+    margin-left: 12px;
+}
+h5{
+    opacity: 0.8;
+    font-size: 16px;
+    font-weight: 200;
+}
+.newyork-content > button:hover,
+.paris-content > button:hover,
+.sanfan-content > button:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+/* Contact section css */
+.contact-section{
+    margin-top: 70px;   
+    height: 350px;
+}
+.contact-heading{
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: 200;
+    font-size: 30px;
+    margin: 10px 0;
+}
+.contact-sub-heading{
+    text-align: center;
+    font-size: 15px;
+    opacity: 0.5;
+    padding: 10px 0;
+    font-style: italic;
+}
+.box{
+    width: 800px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.box-line1,
+.box-line2,
+.box-line3
+{
+    display:flex;
+    margin: 15px 0 10px 20px;
+}
+.box-line1 > p,
+.box-line2 > p,
+.box-line3 > p{
+    margin-left: 15px;
+}
+.form{
+    margin-right: 20px;
+}
+.form-1{
+    padding: 8px 15px;
+}
+.box-email,
+.box-name{
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 7px 15px;
+}
+.box-name{
+    margin-right: 5px;
+}
+.form-2{
+    
+}
+.form-2 > input{
+    padding: 8px 15px;
+    font-size: 16px; 
+    margin-left: 12px;
+    width: 92.25%;
+}
+.form-2  > a{
+    text-decoration: none;
+    float: right;
+    margin: 20px 23px;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #000;
+}
+.form-2 > a:hover{
+    color: #000;
+    background-color: #ccc;
+}
+/* Footer css */
+.footer > img{
+    width: 100%;
+}
+.icon{
+    text-align: center;
+    margin: 50px 0;
+    opacity: 0.7;
+    font-size: 25px;
+}
+.icon > p{
+    margin: 30px 0;
+
+}
+.icon > p > a{
+    color: #000;
+
+}
+/* Modal css */
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1d03032a;
+    display: none;   
+} 
+.modal.open{
+    display: flex;
+}
+.modal__form{
+    width: 600px;
+    margin: auto;
+    margin-top: 10% ;
+    background-color: #fff;
+    max-width: calc(100% - 30px);
+    min-height: 200px;
+    animation: modalFadeIn ease 0.6s;
+}
+.modal__form-header{
+    height: 100px;
+    background-color: rgb(7, 7, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal__form-header > i{
+    margin-right: 5px;
+}
+.modal__form-input{
+    
+}
+.modal__form-item{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5%;
+}
+.modal__form-item > label{
+    padding: 5px 0;
+}
+.modal__form-item > input{
+    padding: 10px 5px;
+}
+.modal__form > button{
+    background-color: rgb(7, 7, 255);
+    width: 90%;
+    margin-left: 5%; 
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.modal__form > button:hover{
+    background-color: rgb(60, 60, 201);
+    cursor: pointer;
+}
+.modal__end{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5%;
+}
+.modal__end > button{
+    padding: 5px 5px;
+    background-color: #ccc;
+}
+.modal__end > button:hover{
+    background-color: red;
+    colr: #000;
+    cursor: pointer;
+}
+.modal__end > button > i{
+    margin: 3px 0 0 3px;
+}
+@keyframes modalFadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to {
+        opacity: 1;
+        transform: transLateY(0);
+    }
+}
