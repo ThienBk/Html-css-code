@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Key Way - Dịch vụ an toàn thực phẩm</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .intro {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .call-to-action {
+    text-align: center;
+    margin-top: 30px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Key Way - Dịch vụ an toàn thực phẩm</h1>
+</header>
+<div class="container">
+  <section class="intro">
+    <h2>Giới thiệu về chúng tôi</h2>
+    <p>Key Way là một công ty chuyên cung cấp dịch vụ an toàn thực phẩm hàng đầu. Chúng tôi cam kết đảm bảo chất lượng và sự an toàn của thực phẩm từ quá trình sản xuất đến tiêu thụ.</p>
+  </section>
+  <section class="call-to-action">
+    <h2>Liên hệ ngay để biết thêm chi tiết</h2>
+    <p>Để biết thêm thông tin về dịch vụ và nhận tư vấn miễn phí, hãy gọi ngay:</p>
+    <a id="call-button" href="#" onclick="callNow()">Gọi ngay</a>
+  </section>
+</div>
+<script>
+  function callNow() {
+    var phoneNumber = "0333298557";
+    if (window.innerWidth <= 768) {
+      // On mobile, initiate a phone call
+      window.location.href = "tel:" + phoneNumber;
+    } else {
+      // On desktop, display the phone number
+      document.getElementById("call-button").innerText = "Gọi ngay: " + phoneNumber;
+    }
+  }
+</script>
+</body>
+</html>
